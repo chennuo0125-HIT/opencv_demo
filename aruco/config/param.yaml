@@ -1,0 +1,12 @@
+%YAML:1.0
+camera_matrix: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 4.1448994146343648e+02, 0., 320., 0., 4.1448994146343648e+02, 240., 0., 0., 1. ]
+dist_coefs: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [ -2.3073291398858633e-02, 2.4789961746809711e-01, 0., 0., -4.9176785624021357e-01 ]
+printed_marker_side_length: 0.052
