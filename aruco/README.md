@@ -8,7 +8,7 @@
 
 ```
 ​```
-git clone
+git clone https://github.com/chennuo0125-HIT/opencv_demo.git
 cd aruco
 mkdir build
 cd build
