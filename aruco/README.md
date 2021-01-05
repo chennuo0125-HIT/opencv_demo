@@ -38,6 +38,6 @@ make
 
 ### 结果
 
-![](/home/cn/learn/opencv_demo/test.jpg)
+![](test.jpg)
 
-![](/home/cn/learn/opencv_demo/result.jpg)
+![](result.jpg)
