@@ -21,7 +21,7 @@ public:
     void detectMarker(const cv::Mat img, vector<vector<cv::Point2f>>& markers_corners, vector<int>& markers_ids);
 
     // config camera param before estimate marker pose and draw marker
-    void configCamAndPrintedMarker(cv::Mat camera_mat, cv::Mat dist_coefs, double side_length);
+    void configCamAndPrintedMarker(cv::Mat camera_mat, cv::Mat dist_coefs, double side_length, bool use_fisheye = false);
 
     // estimate marker pose
     void estimateMarkerPose(const cv::Mat img, vector<cv::Vec3d>& rvecs, vector<cv::Vec3d>& tvecs);
@@ -32,6 +32,7 @@ public:
     void drawMarkerAxis(cv::Mat& img);
 
 private:
+    bool use_fisheye_{false}; // whether use fisheye model
     cv::Mat camera_mat_; // camera intrinsics
     cv::Mat dist_coefs_; // camera distort coefficients
     double side_length_{0.0}; // actual side length of printed marker

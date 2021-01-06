@@ -1,0 +1,13 @@
+%YAML:1.0
+camera_matrix: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 2.7643293365281488e+02, 0., 4.7950000000000000e+02, 0., 2.7573225230222766e+02, 4.7950000000000000e+02, 0., 0., 1. ]
+dist_coefs: !!opencv-matrix
+   rows: 1
+   cols: 4
+   dt: d
+   data: [ 3.8510341559403138e-02, -6.4233004278882837e-03, -2.1458167019043108e-03, 0. ]
+printed_marker_side_length: 0.052
+use_fisheye: true

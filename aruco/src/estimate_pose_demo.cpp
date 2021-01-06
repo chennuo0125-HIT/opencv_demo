@@ -23,6 +23,7 @@ int main (int argc, char** argv)
     Aruco aruco(argv[1]); 
 
     // read local config param
+    bool use_fisheye;
     double side_length;
     cv::Mat cam_mat, dist_coef;
     string instrinsics_file = argv[2];
@@ -35,9 +36,10 @@ int main (int argc, char** argv)
     fs["camera_matrix"] >> cam_mat;
     fs["dist_coefs"] >> dist_coef;
     fs["printed_marker_side_length"] >> side_length;
+    fs["use_fisheye"] >> use_fisheye;
     
     // config aruco for estimate pose
-    aruco.configCamAndPrintedMarker(cam_mat, dist_coef, side_length);
+    aruco.configCamAndPrintedMarker(cam_mat, dist_coef, side_length, use_fisheye);
 
     // estimate pose
     vector<cv::Vec3d> rvecs, tvecs;
