@@ -3,10 +3,6 @@
 Aruco::Aruco(string dict_name)
 {
     cv::aruco::PREDEFINED_DICTIONARY_NAME name = cv::aruco::PREDEFINED_DICTIONARY_NAME::DICT_6X6_250;
-    if (dict_name != "4X4_50" && dict_name != "4X4_100" && dict_name != "4X4_100" && dict_name != "4X4_1000"
-        && dict_name != "5X5_50" && dict_name != "5X5_100" && dict_name != "5X5_250" && dict_name != "5X5_1000"
-        && dict_name != "6X6_50" && dict_name != "6X6_100" && dict_name != "6X6_250" && dict_name != "6X6_1000"
-        && dict_name != "7X7_50" && dict_name != "7X7_100" && dict_name != "7X7_250" && dict_name != "7X7_1000")
     if ("4X4_50" == dict_name) name = cv::aruco::PREDEFINED_DICTIONARY_NAME::DICT_4X4_50;
     else if ("4X4_100" == dict_name) name = cv::aruco::PREDEFINED_DICTIONARY_NAME::DICT_4X4_100;
     else if ("4X4_100" == dict_name) name = cv::aruco::PREDEFINED_DICTIONARY_NAME::DICT_4X4_250;
