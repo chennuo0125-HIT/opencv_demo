@@ -10,4 +10,4 @@ dist_coefs: !!opencv-matrix
    dt: d
    data: [ 3.8510341559403138e-02, -6.4233004278882837e-03, -2.1458167019043108e-03, 0. ]
 printed_marker_side_length: 0.052
-use_fisheye: true
+use_fisheye: 1
