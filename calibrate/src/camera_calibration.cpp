@@ -289,6 +289,8 @@ int main(int argc, char* argv[])
     const Scalar RED(0,0,255), GREEN(0,255,0);
     const char ESC_KEY = 27;
 
+    cv::namedWindow("Image View", CV_WINDOW_NORMAL);
+
     //! [get_input]
     for(;;)
     {
@@ -433,6 +435,15 @@ int main(int argc, char* argv[])
                                                                 Matx33d::eye(), newCamMat, 1);
             fisheye::initUndistortRectifyMap(cameraMatrix, distCoeffs, Matx33d::eye(), newCamMat, imageSize,
                                              CV_16SC2, map1, map2);
+
+            // cv::Size tmp_img_size(4*imageSize.width, 4*imageSize.height);
+            // newCamMat = cameraMatrix.clone();
+            // newCamMat.at<double>(0, 2) = double(tmp_img_size.width) / 2;
+            // newCamMat.at<double>(1, 2) = double(tmp_img_size.height) / 2;
+            // cout << cameraMatrix << endl;
+            // cout << newCamMat << endl;
+            // fisheye::initUndistortRectifyMap(cameraMatrix, distCoeffs, Matx33d::eye(), newCamMat, tmp_img_size,
+            //                                     CV_16SC2, map1, map2);
         }
         else
         {

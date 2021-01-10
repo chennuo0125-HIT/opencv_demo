@@ -16,7 +16,7 @@
 		To use an input video  -> give the path of the input video, like "/tmp/x.avi"
 		To use an image list   -> give the path to the XML or YAML file containing the list of the images, like "/tmp/circles_list.xml"
 		-->
-  <Input>"/home/cn/learn/opencv_demo/calibrate/config/img_path.xml"</Input>
+  <Input>"/home/cn/learn/opencv_demo/calibrate/config/fisheye_img_path.xml"</Input>
   <!--  If true (non-zero) we flip the input images around the horizontal axis.-->
   <Input_FlipAroundHorizontalAxis>0</Input_FlipAroundHorizontalAxis>
   
@@ -24,7 +24,7 @@
   <Input_Delay>100</Input_Delay>	
   
   <!-- How many frames to use, for calibration. -->
-  <Calibrate_NrOfFrameToUse>11</Calibrate_NrOfFrameToUse>
+  <Calibrate_NrOfFrameToUse>13</Calibrate_NrOfFrameToUse>
   <!-- Consider only fy as a free parameter, the ratio fx/fy stays the same as in the input cameraMatrix. 
 	   Use or not setting. 0 - False Non-Zero - True-->
   <Calibrate_FixAspectRatio> 1 </Calibrate_FixAspectRatio>
@@ -42,7 +42,7 @@
   <!-- If true (non-zero) we show after calibration the undistorted images.-->
   <Show_UndistortedImage>1</Show_UndistortedImage>
   <!-- If true (non-zero) will be used fisheye camera model.-->
-  <Calibrate_UseFisheyeModel>0</Calibrate_UseFisheyeModel>
+  <Calibrate_UseFisheyeModel>1</Calibrate_UseFisheyeModel>
   <!-- If true (non-zero) distortion coefficient k1 will be equals to zero.-->
   <Fix_K1>0</Fix_K1>
   <!-- If true (non-zero) distortion coefficient k2 will be equals to zero.-->
