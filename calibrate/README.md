@@ -93,6 +93,4 @@ make
 
 ### 标定结果
 
-![](test.jpg)
-
 ![](result.png)
