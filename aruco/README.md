@@ -54,6 +54,6 @@ make
 
 结果:
 
-![](test_fisheye.jpg)
+![](test_fisheye.png)
 
-![](result_fisheye.jpg)
+![](result_fisheye.png)
