@@ -1,3 +1,5 @@
+.vscode
 aruco/build
 calibrate/build
 tool/build
+orb_compare/build
